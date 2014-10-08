@@ -6,8 +6,11 @@ format suitable to be used with the Adobe Encore suite for the purposes of makin
 
 ## Usage
 
-`srt2txt [--format {ntsc,pal}] [input file] [output file]`
+`srt2txt [--format {ntsc,pal}] [--gap N] [input file] [output file]`
 
+- `--gap` is used to specify the minimum number of frames between text clips, default is 5. This is a requirement
+in Encore for Blu-ray discs. Frames are padded at the beginning of clips when needed.
+- `--format` specifies the framerate in use for the project (default is PAL at 25)
 
 ## Requirements
 
